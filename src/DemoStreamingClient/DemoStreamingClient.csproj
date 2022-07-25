@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Orleans.Client" Version="3.6.2" />
+      <PackageReference Include="Microsoft.Orleans.Streaming.AzureStorage" Version="3.6.2" />
+      <PackageReference Include="Serilog" Version="2.11.0" />
+      <PackageReference Include="Serilog.Extensions.Hosting" Version="5.0.1" />
+      <PackageReference Include="Serilog.Sinks.Console" Version="4.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Grains\OrleansStreamingDemo.Grains.Interfaces\OrleansStreamingDemo.Grains.Interfaces.csproj" />
+    </ItemGroup>
+
+</Project>
