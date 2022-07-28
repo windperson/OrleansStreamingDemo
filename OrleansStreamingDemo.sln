@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiloHost", "src\SiloHost\Si
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoStreamingClient", "src\DemoStreamingClient\DemoStreamingClient.csproj", "{1B042B39-93E5-4EBB-A350-9EDB2FFEB98B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{E72DFFCD-B621-47E0-84AF-1F0DACA004E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrleansStreamingDemo.Grains.Tests", "test\OrleansStreamingDemo.Grains.Tests\OrleansStreamingDemo.Grains.Tests.csproj", "{64B24067-F027-42BF-BAB9-E719A2CD7004}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +45,10 @@ Global
 		{1B042B39-93E5-4EBB-A350-9EDB2FFEB98B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B042B39-93E5-4EBB-A350-9EDB2FFEB98B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B042B39-93E5-4EBB-A350-9EDB2FFEB98B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64B24067-F027-42BF-BAB9-E719A2CD7004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64B24067-F027-42BF-BAB9-E719A2CD7004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64B24067-F027-42BF-BAB9-E719A2CD7004}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64B24067-F027-42BF-BAB9-E719A2CD7004}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,5 +59,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{1BC44F82-9948-4F0D-A413-1F668E77E5B2} = {AE424B15-8F7C-4B90-9346-A77F0AC0CEC2}
 		{1A3C017D-5DDA-46D4-8CE7-924B293418F3} = {AE424B15-8F7C-4B90-9346-A77F0AC0CEC2}
+		{64B24067-F027-42BF-BAB9-E719A2CD7004} = {E72DFFCD-B621-47E0-84AF-1F0DACA004E2}
 	EndGlobalSection
 EndGlobal

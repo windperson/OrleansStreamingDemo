@@ -56,6 +56,8 @@ public class ProducerGrain : Grain, IProducerGrain
         }
         if(_stream is not null)
         {
+            // doesn't have to call this because the underlying PersistentStream didn't implement OnCompleteAsync & OnErrorAsync
+            // await _stream.OnCompletedAsync();
             _stream = null;
         }
         return Task.CompletedTask;

@@ -12,6 +12,9 @@
             // If you have changed target frameworks, make sure to update the program path.
             "program": "${workspaceFolder}/src/SiloHost/bin/Debug/net6.0/SiloHost.dll",
             "args": [],
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
             "cwd": "${workspaceFolder}/src/SiloHost",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "integratedTerminal",
@@ -28,6 +31,9 @@
             // If you have changed target frameworks, make sure to update the program path.
             "program": "${workspaceFolder}/src/DemoClient/bin/Debug/net6.0/DemoClient.dll",
             "args": [],
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
             "cwd": "${workspaceFolder}/src/DemoClient",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "integratedTerminal",
