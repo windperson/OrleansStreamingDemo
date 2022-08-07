@@ -63,7 +63,7 @@ public class ProducerConsumerGrainTest
         await SiloBuilder.TimerTick?.Invoke(new object())!;
         await SiloBuilder.TimerTick?.Invoke(new object())!;
         //Give some time for stream to propagate data to target receiver
-        await Task.Delay(TimeSpan.FromSeconds(0.3));
+        await Task.Delay(TimeSpan.FromSeconds(0.2));
         await producerGrain.StopProducing();
         await cluster.StopAllSilosAsync();
 
@@ -74,6 +74,6 @@ public class ProducerConsumerGrainTest
                 // ReSharper disable once ComplexObjectDestructuringProblem
                 logger.LogInformation("OnNextAsync: item: {Item}, token = {Token}", 
                     It.IsAny<int>(), It.IsAny<StreamSequenceToken>()),
-            Times.Exactly(2));
+            Times.AtLeast(2));
     }
 }
