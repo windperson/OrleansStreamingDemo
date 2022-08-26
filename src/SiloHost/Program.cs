@@ -33,7 +33,6 @@ namespace SiloHost
         private static void ConfigureSilo(ISiloBuilder siloBuilder)
         {
             siloBuilder.UseLocalhostClustering()
-                // .AddSimpleMessageStreamProvider("SMSProvider")
                 .AddAzureTableGrainStorage("PubSubStore",
                     optionBuilder => optionBuilder.ConfigureTableServiceClient(DefaultAzuriteTableCon))
                 .AddAzureQueueStreams("DemoOrleansStreamProvider", ConfigureAzureQueue);
